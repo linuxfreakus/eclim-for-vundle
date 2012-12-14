@@ -120,6 +120,66 @@ When reporting a bug, please include the following information:
 What's New?
 ===========
 
+[image: Rss Feed for What's New][image] (index.rss)
+
+
+2012-11-25
+----------
+
+The most notable change in this release is support for Eclipse 3.8
+with the Indigo release (1.7.13). Both releases also include several
+small bug fixes.
+
+- Eclim 2.2.5 (|2.2.5|) for Eclipse 4.2 (Juno).
+
+- Eclim 1.7.13 (|1.7.13|) for Eclipse 3.7/3.8 (Indigo).
+
+
+2012-11-18
+----------
+
+This is another bug fix release which includes support for the latest
+Android development toolkit (21.0.0).
+
+- Eclim 2.2.4 (|2.2.4|) for Eclipse 4.2 (Juno).
+
+- Eclim 1.7.12 (|1.7.12|) for Eclipse 3.7 (Indigo).
+
+
+2012-10-19
+----------
+
+This is a bug fix release for Windows users which fixes executing of
+eclim commands from vim:
+
+- Eclim 2.2.3 (|2.2.3|) for Eclipse 4.2 (Juno).
+
+- Eclim 1.7.11 (|1.7.11|) for Eclipse 3.7 (Indigo).
+
+
+2012-10-07
+----------
+
+Two new eclim updates are once again available with several bug fixes
+and improvements.
+
+- Eclim 2.2.2 (|2.2.2|) for Eclipse 4.2 (Juno).
+
+- Eclim 1.7.10 (|1.7.10|) for Eclipse 3.7 (Indigo).
+
+
+2012-09-09
+----------
+
+Eclim 1.7.9 (|1.7.9|) for Eclipse 3.7 (Indigo) is now available.
+This release adds initial support for scala (|vim-scala-index|).
+
+Please note that the Scala IDE (http://scala-ide.org) , which eclim
+uses to provide scala support, is not yet available for Eclipse 4.2
+(Juno), so eclim's scala support will not be available for the eclim
+2.2.x releases until sometime after the Scala IDE has been updated for
+Juno.
+
 
 2012-09-01
 ----------

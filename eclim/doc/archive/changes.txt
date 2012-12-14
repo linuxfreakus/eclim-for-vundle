@@ -176,8 +176,8 @@ Eclim:
      eclipse instances on the same workspace.
 
 Common:
-   - Added a |:TreeTab| command like |:ProjectTab| but for any
-     arbitrary directory.
+   - Added a :TreeTab command like |:ProjectTab| but for any arbitrary
+     directory.
 
    - Added a |:BuffersToggle| command to toggle whether the eclim
      buffers windows is open or closed.
@@ -398,7 +398,7 @@ Java:
 
    - Updated |:JUnitImpl| to support junit 4 method signatures.
 
-   - Updated |:JavaImport| and |:JavaImportSort| to honor eclipse's
+   - Updated |:JavaImport| and :JavaImportSort to honor eclipse's
      import order preference and added the ability to edit that
      preference via |:ProjectSettings| and :EclimSettings
      (|vim-core-eclim#:EclimSettings|).
@@ -541,7 +541,7 @@ C/C++:
 Java:
    - Added command to run java (|:Java|).
 
-   - Added command to run javac (|:Javac|).
+   - Added command to run javac.
 
    - Added command to run javadoc (|:Javadoc|).
 
@@ -569,8 +569,7 @@ Eclim:
 Java:
    - Added command to view type hierarchy (|:JavaHierarchy|).
 
-   - Added command to import all undefined types
-     (|:JavaImportMissing|).
+   - Added command to import all undefined types.
 
 *1.4.4*
 
@@ -1080,7 +1079,7 @@ Java:
 
    - Added TestNG to ant compiler's error format.
 
-   - Added |:JUnitExecute| and |:JUnitResult|.
+   - Added :JUnitExecute and |:JUnitResult|.
 
 Xml:
    - Added |:DtdDefinition| and |:XsdDefinition|.
@@ -1210,7 +1209,7 @@ Bug Fixes:
    - Bug 1440606
      (https://sourceforge.net/tracker/index.php?func=detail&aid=1440606&group_id=145869&atid=763323)
 
-     Note: The original implementation of |:JavaImportClean| was written
+     Note: The original implementation of :JavaImportClean was written
        entirely in vim (didn't require eclim server).  To properly
        handle ignoring comments when determining what imports are
        unused, this functionality had to be reimplemented with server

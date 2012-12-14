@@ -1,10 +1,8 @@
 " Author:  Eric Van Dewoestine
 "
-" Description: {{{
+" License: {{{
 "
-" License:
-"
-" Copyright (C) 2005 - 2009  Eric Van Dewoestine
+" Copyright (C) 2012  Eric Van Dewoestine
 "
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -21,28 +19,22 @@
 "
 " }}}
 
-source $VIMRUNTIME/syntax/htmldjango.vim
+" Functionality exposed to java xml files (web.xml, spring xml files, etc.).
 
-if !exists('g:HtmlDjangoUserTags')
-  let g:HtmlDjangoUserTags = []
-endif
+" Global Variables {{{
 
-if !exists('g:HtmlDjangoUserFilters')
-  let g:HtmlDjangoUserFilters = []
+if !exists("g:EclimJavaSearchMapping")
+  let g:EclimJavaSearchMapping = 1
 endif
 
-syn match djangoComment "{#.*#}"
+" }}}
 
-if len(g:HtmlDjangoUserTags)
-  exec 'syn keyword djangoStatement ' . join(g:HtmlDjangoUserTags)
+" Mappings {{{
+
+if g:EclimJavaSearchMapping
+  noremap <silent> <buffer> <cr> :call eclim#java#search#FindClassDeclaration()<cr>
 endif
-if len(g:HtmlDjangoUserBodyElements)
-  for element in g:HtmlDjangoUserBodyElements
-    exec 'syn keyword djangoStatement ' . join(element)
-  endfor
-endif
-if len(g:HtmlDjangoUserFilters)
-  exec 'syn keyword djangoFilter ' . join(g:HtmlDjangoUserFilters)
-endif
+
+" }}}
 
 " vim:ft=vim:fdm=marker

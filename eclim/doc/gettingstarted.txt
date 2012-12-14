@@ -243,10 +243,9 @@ Lets get started writing our first java application using eclim.
    <
 
 5. After saving the file you should have no more validation errors, so
-   now we can compile the code and run it like so:
+   now we can run the code like so:
 
    >
-      :Javac
       :Java
 
    <
@@ -345,7 +344,7 @@ maven's built in features to get your project started.
 
    >
       $ vim
-      :MvnRepos
+      :MvnRepo
       :ProjectImport /path/to/new/project
 
    <
